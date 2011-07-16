@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="IHI.Database.Main" namespace="IHI.Database">
+    <class name="IHI.Database.Habbo,IHI.Database.Main" table="habbos">
+        <id name="habbo_id" column="habbo_id" type="int" unsaved-value="-1">
+            <generator class="native" />
+        </id>
+
+        <property name="login_id"       column="login_id"       type="int"        not-null="true"                                     />
+        <property name="username"       column="username"		    type="string"     not-null="true"     length="16"     unique="true"   />
+        <property name="creation_date"  column="creation_date"  type="DateTime"   not-null="true"                                     />
+        <property name="figure"         column="figure"		      type="string"     not-null="true"     length="255"                    />
+        <property name="swim_figure"    column="swim_figure"    type="int"        not-null="true"                                     />
+        <property name="gender"         column="gender"	        type="boolean"    not-null="true"                                     />
+        <property name="motto"          column="motto"		      type="string"     not-null="true"     length="64"                     />
+        <property name="credits"        column="credits"        type="int"        not-null="true"                                     />
+        <property name="pixels"         column="pixels"		      type="int"        not-null="true"                                     />
+        <property name="last_access"    column="last_access"    type="DateTime"   not-null="false"                                    />
+        <property name="sso_ticket"     column="sso_ticket"	    type="string"     not-null="false"    length="39"                     />
+        <property name="origin_ip"      column="origin_ip"	    type="int"        not-null="false"                                    />
+    </class>
+</hibernate-mapping>

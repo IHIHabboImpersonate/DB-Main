@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="IHI.Database.Main" namespace="IHI.Database">
+    <class name="IHI.Database.Login,IHI.Database.Main" table="logins">
+        <id name="login_id" column="login_id" type="int" unsaved-value="-1">
+            <generator class="native" />
+        </id>
+
+        <property name="email"          column="email"		      type="string"   not-null="true" length="254"  unique="true"   />
+        <property name="password"       column="password"       type="string"   not-null="true" length="64"                   />
+        <property name="date_of_birth"  column="date_of_birth"	type="DateTime" not-null="true"                               />
+        <property name="date_created"   column="date_created"   type="DateTime" not-null="true"                               />
+    </class>
+</hibernate-mapping>

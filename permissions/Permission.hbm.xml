@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="IHI.Database.Main" namespace="IHI.Database">
+    <class name="IHI.Database.Permission,IHI.Database.Main" table="permissions">
+        <id name="permission_id" column="permission_id" type="int" unsaved-value="-1">
+            <generator class="native" />
+        </id>
+
+        <property name="permission_name"    column="permission_name"    type="string"   not-null="true" length="48" unique="true"   />
+    </class>
+</hibernate-mapping>
