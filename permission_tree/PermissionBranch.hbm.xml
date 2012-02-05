@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="IHI.Database.Main" namespace="IHI.Database">
-    <class name="IHI.Database.PermissionBranch,IHI.Database.Main" table="permission_tree">
-        <id name="branch_id" column="branch_id" type="int" unsaved-value="-1">
-            <generator class="native" />
-        </id>
-        
-        <property name="type"           column="type"           type="byte" not-null="true" />
-        <property name="value_id"       column="value_id"		    type="int"  not-null="true" />
-        <property name="branch_left"    column="branch_left"    type="int"  not-null="true" />
-        <property name="branch_right"   column="branch_right"   type="int"  not-null="true" />
-    </class>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DB-Main" namespace="IHI.Database">
+  <class name="IHI.Database.PermissionBranch,DB-Main" table="permission_tree">
+    <id name="branch_id" column="branch_id" type="int" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="type" column="type" type="byte" not-null="true" />
+    <property name="value_id" column="value_id" type="int" not-null="true" />
+    <property name="branch_left" column="branch_left" type="int" not-null="true" />
+    <property name="branch_right" column="branch_right" type="int" not-null="true" />
+  </class>
 </hibernate-mapping>

@@ -1,56 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region GPLv3
+
+// 
+// Copyright (C) 2012  Chris Chenery
+// 
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+// 
+
+#endregion
 
 namespace IHI.Database
 {
     public class PermissionBranch
     {
-        private int fBranchID;
-        public virtual int branch_id
-        {
-            get { return this.fBranchID; }
-            set
-            {
-                this.fBranchID = value;
-            }
-        }
-        private byte fType;
-        public virtual byte type
-        {
-            get { return this.fType; }
-            set
-            {
-                this.fType = value;
-            }
-        }
-        private int fValueID;
-        public virtual int value_id
-        {
-            get { return this.fValueID; }
-            set
-            {
-                this.fValueID = value;
-            }
-        }
-        private int fLeft;
-        public virtual int branch_left
-        {
-            get { return this.fLeft; }
-            set
-            {
-                this.fLeft = value;
-            }
-        }
-        private int fRight;
-        public virtual int branch_right
-        {
-            get { return this.fRight; }
-            set
-            {
-                this.fRight = value;
-            }
-        }
+        public virtual int branch_id { get; set; }
+
+        public virtual byte type { get; set; }
+
+        public virtual int value_id { get; set; }
+
+        public virtual int branch_left { get; set; }
+
+        public virtual int branch_right { get; set; }
     }
 }

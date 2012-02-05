@@ -21,10 +21,14 @@
 
 namespace IHI.Database
 {
-    public class Permission
+    public class PersistantVariableHabbo
     {
-        public virtual int permission_id { get; set; }
+        public virtual int variable_id { get; set; }
 
-        public virtual string permission_name { get; set; }
+        public virtual int habbo_id { get; set; }
+
+        public virtual string variable_name { get; set; }
+
+        public virtual string variable_value { get; set; }
     }
 }
