@@ -4,7 +4,7 @@
         <id name="habbo_id" column="habbo_id" type="int" unsaved-value="-1">
             <generator class="native" />
         </id>
-
+      
         <property name="login_id"       column="login_id"       type="int"        not-null="true"                                     />
         <property name="username"       column="username"		    type="string"     not-null="true"     length="16"     unique="true"   />
         <property name="creation_date"  column="creation_date"  type="DateTime"   not-null="true"                                     />

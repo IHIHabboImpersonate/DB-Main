@@ -22,7 +22,7 @@ namespace IHI.Database
             get;
             set;
         }
-        public virtual DateTimeOffset creation_date
+        public virtual DateTime creation_date
         {
             get;
             set;
@@ -57,7 +57,7 @@ namespace IHI.Database
             get;
             set;
         }
-        public virtual DateTimeOffset? last_access
+        public virtual DateTime? last_access
         {
             get;
             set;
