@@ -7,122 +7,70 @@ namespace IHI.Database
 {
     public class Habbo
     {
-        private int fHabboID;
         public virtual int habbo_id
         {
-            get { return this.fHabboID; }
-            set
-            {
-                this.fHabboID = value;
-            }
+            get;
+            set;
         }
-        private int fLoginID;
         public virtual int login_id
         {
-            get { return this.fLoginID; }
-            set
-            {
-                this.fLoginID = value;
-            }
+            get;
+            set;
         }
-        private string fUsername;
         public virtual string username
         {
-            get { return this.fUsername; }
-            set
-            {
-                this.fUsername = value;
-            }
+            get;
+            set;
         }
-        private DateTimeOffset fCreationDate;
         public virtual DateTimeOffset creation_date
         {
-            get { return this.fCreationDate; }
-            set
-            {
-                this.fCreationDate = value;
-            }
+            get;
+            set;
         }
-        private string fFigure;
         public virtual string figure
         {
-            get { return this.fFigure; }
-            set
-            {
-                this.fFigure = value;
-            }
+            get;
+            set;
         }
-        private int fSwimFigure;
         public virtual int swim_figure
         {
-            get { return this.fSwimFigure; }
-            set
-            {
-                this.fSwimFigure = value;
-            }
+            get;
+            set;
         }
-        private bool fGender;
         public virtual bool gender
         {
-            get { return this.fGender; }
-            set
-            {
-                this.fGender = value;
-            }
+            get;
+            set;
         }
-        private string fMotto;
         public virtual string motto
         {
-            get { return this.fMotto; }
-            set
-            {
-                this.fMotto = value;
-            }
+            get;
+            set;
         }
-        private int fCredits;
         public virtual int credits
         {
-            get { return this.fCredits; }
-            set
-            {
-                this.fCredits = value;
-            }
+            get;
+            set;
         }
-        private int fPixels;
         public virtual int pixels
         {
-            get { return this.fPixels; }
-            set
-            {
-                this.fPixels = value;
-            }
+            get;
+            set;
         }
-        private DateTimeOffset? fLastAccess;
         public virtual DateTimeOffset? last_access
         {
-            get { return this.fLastAccess; }
-            set
-            {
-                this.fLastAccess = value;
-            }
+            get;
+            set;
         }
-        private string fSSOTicket;
         public virtual string sso_ticket
         {
-            get { return this.fSSOTicket; }
-            set
-            {
-                this.fSSOTicket = value;
-            }
+            get;
+            set;
         }
-        private int? fOriginIP;
         public virtual int? origin_ip
         {
-            get { return this.fOriginIP; }
-            set
-            {
-                this.fOriginIP = value;
-            }
+            get;
+            set;
         }
     }
 }

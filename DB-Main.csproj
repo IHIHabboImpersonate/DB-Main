@@ -19,13 +19,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="habbos\Habbo.hbm.xml" />
+    <EmbeddedResource Include="habbos\Habbo.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="permissions\Permission.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="logins\Login.hbm.xml" />
+    <EmbeddedResource Include="logins\Login.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="permission_tree\PermissionBranch.hbm.xml" />
