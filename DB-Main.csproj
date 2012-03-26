@@ -11,6 +11,7 @@
   </PropertyGroup>
   <Import Project="IHIDatabase.targets" />
   <ItemGroup>
+    <Compile Include="rooms\Room.cs" />
     <Compile Include="persistant_variables_habbo\PersistantVariableHabbo.cs" />
     <Compile Include="habbos\Habbo.cs" />
     <Compile Include="logins\Login.cs" />
@@ -36,6 +37,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="persistant_variables_habbo\PersistantVariableHabbo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="rooms\Room.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
