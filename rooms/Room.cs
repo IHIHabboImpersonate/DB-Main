@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace IHI.Database
 {
@@ -28,6 +25,12 @@ namespace IHI.Database
             set;
         }
         public virtual string category_id
+        {
+            get;
+            set;
+        }
+
+        public virtual DateTime last_entry
         {
             get;
             set;
